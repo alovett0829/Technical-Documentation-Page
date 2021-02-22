@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      <nav id="navbar">
+        <header>Programming Languages</header>
+          <ul>
+            <li><a href="#what-is-html" class="nav-link">What is HTML?</a></li>
+            <li><a href="#comments" class="nav-link">Comments</a></li>
+            <li><a href="#headings" class="nav-link">Headings</a></li>
+            <li><a href="#elements" class="nav-link">Elements</a></li>
+            <li><a href="#attributes" class="nav-link">Attributes</a></li>
+            <li><a href="#images" class="nav-link">Images</a></li>
+            <li><a href="#forms" class="nav-link">Forms</a></li>
+            <li><a href="#layout" class="nav-link">Layout</a></li>
+            <li><a href="#style" class="nav-link">Style Guide</a></li>
+            <li><a href="#reference" class="nav-link">Reference</a></li>
+          </ul>
+      </nav>
+
+    <main>
+      <section id="what-is-html">
+        <h2>What is HTML?</h2>
+        <p>HTML is the standard markup language for creating Web pages.</p>
+        <ul>
+          <li class="list">HTML stands for Hyper Text Markup Language</li>
+          <li class="list">HTML is the standard markup language for creating Web pages</li>
+          <li class="list">HTML describes the structure of a Web page</li>
+          <li class="list">HTML consists of a series of elements</li>
+          <li class="list">HTML elements tell the browser how to display the content</li>
+          <li class="list">HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+        </ul><br>
+        <p>The <span class="highlight-code">&lt;!DOCTYPE&gt; </span>declaration defines that this document is an HTML5 document</p>
+        <code><span>&lt;!DOCTYPE html&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span class="head">&lt;head&gt;</span>
+          <span class="title">&lt;title&gt;<i>Page Title</i>&lt;/title&gt;</span>
+          <span class="head">&lt;/head&gt;</span>
+          <span class="head">&lt;body&gt;</span>
+          <span class="title"><i>Some code</i></span>
+          <span class="head">&lt;/body&gt;</span>
+          <span>&lt;/html&gt;</span></code>
+      </section>
+
+      <section id="comments">
+        <h2>Comments</h2>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code. Use the following syntax to add comments to your HTML source.</p>
+        <code>&lt;!-- <i>Write  your comment here</i> --&gt;</code>
+      </section>
+
+      <section id="headings">
+        <h2>Headings</h2>
+        <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+        <p>HTML headings are defined with the <span class="highlight-code">&lt;h1&gt;</span> to <span class="highlight-code">&lt;h6&gt;</span> tags. <span class="highlight-code">&lt;h1&gt;</span> defines the most important heading. <span class="highlight-code">&lt;h6&gt;</span> defines the least important heading.</p>
+
+        <code>
+          &lt;h1&gt;<i>Heading 1</i>&lt;h1&gt;<br>
+          &lt;h2&gt;<i>Heading 2</i>&lt;h2&gt;<br>
+          &lt;h3&gt;<i>Heading 3</i>&lt;h3&gt;<br>
+          &lt;h4&gt;<i>Heading 4</i>&lt;h4&gt;<br>
+          &lt;h5&gt;<i>Heading 5</i>&lt;h5&gt;<br>
+          &lt;h6&gt;<i>Heading 6</i>&lt;h6&gt;<br>
+        </code>
+
+        <p>Search engines use the headings to index the structure and content of your web pages.
+          Users often skim a page by its headings. It is important to use headings to show the document structure.
+          <span class="highlight-code">&lt;h1&gt;</span> headings should be used for main headings, followed by <span class="highlight-code">&lt;h2&gt;</span> headings, then the less
+          important <span class="highlight-code">&lt;h3&gt;</span>, and so on.</p>
+      </section>
+
+      <section id="elements">
+        <h2>Elements</h2>
+        <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <p><span class="highlight-code">&lt;tagname></span><i>Content goes here...</i><span class="highlight-code">&lt;/tagname&gt;</span></p>
+        <p>Examples of some HTML elements:</p>
+        <code>&lt;h1&gt;<i>My First Heading</i>&lt;/h1&gt;<br>
+        &lt;p&gt;<i>My first paragraph.</i>&lt;p&gt;</code>
+      </section>
+
+      <section id="attributes">
+        <h2>Attributes</h2>
+        <p>HTML attributes provide additional information about HTML elements. All HTML elements can have attributes. Attributes provide additional information about elements and are always specified in the start tag. Attributes usually come in name/value pairs like: name="value"</p>
+        <ul>
+          <li class="list">The href attribute of <span class="highlight-code">&lt;a&gt;</span> specifies the URL of the page the link goes to</li>
+          <li class="list">The src attribute of <span class="highlight-code">&lt;img&gt;</span> specifies the path to the image to be displayed</li>
+          <li class="list">The width and height attributes of <span class="highlight-code">&lt;img&gt;</span> provide size information for images</li>
+          <li class="list">The alt attribute of <span class="highlight-code">&lt;img&gt;</span> provides an alternate text for an image</li>
+          <li class="list">The style attribute is used to add styles to an element, such as color, font, size, and more</li>
+          <li class="list">The lang attribute of the <span class="highlight-code">&lt;html&gt;</span> tag declares the language of the Web page</li>
+          <li class="list">The title attribute defines some extra information about an element</li>
+        </ul>
+      </section>
+
+      <section id="images">
+        <h2>Images</h2>
+        <p>Images can improve the design and the appearance of a web page. The HTML <span class="highlight-code">&lt;img&gt;</span> tag is used to embed an image in a web page.</p>
+        <div class="img-ex">
+          <img class="img-flowers" src="css\images\pink-rose.jpg" alt="pink rose">
+          <img class="img-flowers" src="css\images\white-flower.jpeg" alt="white flower">
+        </div>
+
+        <code>&lt;img src="url" alt="alternatetext"&gt;</code>
+        <p>The <span class="highlight-code">&lt;img&gt;</span> tag has two required attributes:</p>
+        <ul>
+          <li class="list"><span class="highlight-code">src</span> - Specifies the path to the image</li>
+          <p class="img-list">When a web page loads; it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+          <li class="list"><span class="highlight-code">alt</span> - Specifies an alternate text for the image</li>
+          <p class="img-list">The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+        </ul>
+      </section>
+
+      <section id="forms">
+        <h2>Forms</h2>
+        <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+        <code>
+          &lt;form&gt;<br>
+          &lt;input type="text"&gt;<i>First Name</i><br>
+          &lt;input type="text"&gt;<i>Second Name</i><br>
+          &lt;input type="radio"&gt;<i>Eenie</i><br>
+          &lt;input type="radio"&gt;<i>Meenie</i><br>
+          &lt;input type="radio"&gt;<i>Miney</i><br>
+          &lt;input type="radio"&gt;<i>Mo</i><br>
+          &lt;/form&gt;
+        </code>
+        <p>The HTML <span class="highlight-code">&lt;form&gt;</span> element is used to create an HTML form for user input. It is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+        <p>The HTML <span class="highlight-code">&lt;input&gt;</span> element is the most used form element. The <span class="highlight-code">&lt;input&gt;</span> element can be displayed in many ways, depending on the type attribute.</p>
+
+        <form class="ex-form">
+          <label for=fname"">First Name</label><input type="text" name="" value="First Name">
+          <label for="lname">Last Name</label><input type="text" name="" value="Last Name">
+          <label for="eenie"><input type="radio" name="counting-rhyme" value="">Eenie</Eeni></label>
+          <label for="meenie"><input type="radio" name="counting-rhyme" value="">Meenie</label>
+          <label for="miney"><input type="radio" name="counting-rhyme" value="">Miney</label>
+          <label for="mo"><input type="radio" name="counting-rhyme" value="">Mo</label>
+          <input type="submit" name="" value="Submit">
+        </form>
+  </section>
+
+        <section id="layout">
+        <h2>Layout</h2>
+        <p>Websites often display content in multiple columns (like a magazine or a newspaper).</p>
+        <p>HTML has several semantic elements that define the different parts of a web page:</p>
+        <img class="layout-img" src="https://www.w3schools.com/html/img_sem_elements.gif" alt="HTML layout example">
+        <ul>
+          <li class="list"><span class="highlight-code">&lt;header&gt;</span>- Defines a header for a document or a section</li>
+          <li class="list"><span class="highlight-code">&lt;nav&gt;</span>- Defines a set of navigation links</li>
+          <li class="list"><span class="highlight-code">&lt;section&gt;</span> - Defines a section in a document</li>
+          <li class="list"><span class="highlight-code">&lt;article&gt;</span> - Defines an independent, self-contained content</li>
+          <li class="list"><span class="highlight-code">&lt;aside&gt;</span> - Defines content aside from the content (like a sidebar)</li>
+          <li class="list"><span class="highlight-code">&lt;footer&gt;</span> - Defines a footer for a document or a section</li>
+          <li class="list"><span class="highlight-code">&lt;details&gt;</span> - Defines additional details that the user can open and close on demand</li>
+          <li class="list"><span class="highlight-code">&lt;summary&gt;</span> - Defines a heading for the <span class="highlight-code">&lt;details&gt;</span> element</li>
+        </ul>
+
+        <h3>HTML Layout Techniques</h3>
+        <p>There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:</p>
+        <li class="list">CSS framework</li>
+        <li class="list">CSS float property</li>
+        <li class="list">CSS flexbox</li>
+        <li class="list">CSS grid</li>
+      </section>
+
+      <section id="style">
+        <h2>Style Guide</h2>
+        <p>A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.</p>
+        <p>Here are some guidelines and tips for creating good HTML code.</p>
+        <h3>Use Lowercase Element Name</h3>
+        <p>HTML allows mixing uppercase and lowercase letters in element names. However, we recommend using lowercase element names, because:</p>
+        <ul>
+          <li class="list">Mixing uppercase and lowercase names looks bad</li>
+            <li class="list">Developers normally use lowercase names</li>
+              <li class="list">Lowercase looks cleaner</li>
+                <li class="list">Lowercase is easier to write</li>
+        </ul>
+        <h3>Always Quote Attribute Values</h3>
+        <p>HTML allows attribute values without quotes. However, we recommend quoting attribute values, because:</p>
+        <ul>
+          <li class="list">Developers normally quote attribute values</li>
+            <li class="list">Quoted values are easier to read</li>
+              <li class="list">You MUST use quotes if the value contains spaces</li>
+        </ul>
+        <h3>Avoid Long Code Lines</h3>
+        <p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code. Try to avoid too long code lines.</p>
+        <h3>Blank Lines and Indentation</h3>
+        <p>Do not add blank lines, spaces, or indentations without a reason. For readability, add blank lines to separate large or logical code blocks. For readability, add two spaces of indentation. Do not use the tab key.</p>
+      </section>
+
+      <section id="reference">
+        <h2>Reference</h2>
+        <p>There are many resources to learn more HTML. I used w3schools.com for the contents of this webpage. Here is the <a href="https://www.w3schools.com/html/default.asp">link to their HTML Tutorial</a>.</p>
+      </section>
+
+      </main>
+  </body>
+</html>
